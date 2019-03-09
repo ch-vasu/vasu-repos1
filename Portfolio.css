@@ -20,21 +20,31 @@
 }
 
 #welcome-section{
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 	height: 100vh;
 	width: 100%;
 	padding-right: 1vw;
 	background-color: paleturquoise;
 	font-size: 1em;
 }
+.welcome-contents{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 
+}
+#welcome-section h1{
+  margin-bottom: 0px;
+}
 #welcome-section p{
-	margin-top: -5vh;
-	margin-right: -5vw;
-	color: darkgreen;
+    font-size: 1em;
+    text-align: right;
+    margin-top: 0px;
+	  color: darkgreen;
 }
 
 .project-tile{
@@ -144,13 +154,16 @@ footer{
 
 @media screen and (max-width:1080px){
 	#projects-container{
-		border: 2px solid blue;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
 	}
+  #container{
+    font-size: 1.5em;
+    width: 100%;
+
+  }
 	.project-tile{
 		width: 50vw;
 		height: auto;
@@ -166,4 +179,7 @@ footer{
 	#welcome-section h1,p{
 		font-size: 2em;
 	}
+  .welcome-contents p {
+    text-align: right;
+  }
 }
