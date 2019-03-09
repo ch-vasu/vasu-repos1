@@ -1,0 +1,169 @@
+
+#container {
+
+	display: flex;
+	position: fixed;
+	width: 100%;
+	flex-direction: row;
+	column-gap: 5vw;
+	margin-top: -1vw;
+	justify-content: flex-end;
+	background-color: paleturquoise;
+	z-index: 5;
+}
+
+#navbar a{
+	text-decoration: none;
+	color: black;
+	padding: 1vw;
+	padding-right: 2vw;
+}
+
+#welcome-section{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	padding-right: 1vw;
+	background-color: paleturquoise;
+	font-size: 1em;
+}
+
+#welcome-section p{
+	margin-top: -5vh;
+	margin-right: -5vw;
+	color: darkgreen;
+}
+
+.project-tile{
+  width: 25vw;
+  height: auto;
+	border:2px solid cyan;
+}
+.project-pic{
+  width: 25vw;
+  height: 25vh;
+}
+.project-tile h5{
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+	color: royalblue;
+	border-top: 2px solid cyan;
+	padding: 1vw;
+}
+#projects-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 20vw;
+  grid-row-gap:10vh;
+  justify-content: center;
+}
+#show-all{
+		padding-top: 6vh;
+		padding-bottom: 6vh;
+}
+
+#show-all a{
+	border:2px solid lightgreen;
+	padding: 10px;
+	padding-right: 3vw;
+	padding-left: 3vw;
+	border-radius: 20px;
+}
+
+
+#profile-link:hover{
+	background-color: lightgreen;
+	color: cyan;
+	border-color: cyan;
+}
+
+#projects a{
+	text-decoration: none;
+}
+
+#contact{
+  border: 2px solid gold;
+  height: 70vh;
+  background-color: palegreen;
+	position: relative;
+
+}
+#contact header{
+  text-align: center;
+}
+#contact-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+  grid-column-gap: 5vw;
+
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.contact-links{
+  border: 1px solid ivory;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  position: relative;
+}
+
+.pics{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.contact-links:hover{
+  height: 15vw;
+  width: 15vw;
+  border-radius: 50%;
+	transition: width 2s,height 2s;
+  /* transition-timing-function: linear; */
+
+  margin-top: -1vw;
+
+}
+
+footer{
+	height: auto;
+	background-color: darkslategray;
+	/* margin-top: -1.5vw; */
+	color: white;
+	text-align: center;
+	padding-top: 0.6vw;
+}
+
+@media screen and (max-width:1080px){
+	#projects-container{
+		border: 2px solid blue;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+	.project-tile{
+		width: 50vw;
+		height: auto;
+		margin-top: 10vh;
+	}
+	.project-pic{
+		width: 50vw;
+		height: 25vh;
+	}
+	.project-tile h5{
+		font-size: 2em;
+	}
+	#welcome-section h1,p{
+		font-size: 2em;
+	}
+}
